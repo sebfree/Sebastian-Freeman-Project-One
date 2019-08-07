@@ -22,7 +22,6 @@ img {
     max-width: 1400px;
     width: 90%;
 	margin: 0 auto;
-	/* border: 1px solid rebeccapurple; */
 
 }
 
@@ -33,26 +32,13 @@ header {
     background-image: url(Assets/header-group-appliances.png);
     background-repeat: no-repeat;
     background-position: bottom right;
-    /* background-size: inherit; */
     padding-top: 20px;
     height: 90vh;
     background-size: 42%;
 
-    
-    /* background-size: 40%; */
-    /* background-attachment: fixed; */
-    /* max-width: 100%; */
-    /* background-size: 100% auto; */
-    /* position: relative; */
+
 
 }
-
-/* .header-image {
-    position: relative;
-    bottom: 40px;
-    right: 0px;
-} */
-
 
 .main-nav {
     float: right;
@@ -64,12 +50,21 @@ header {
 .main-nav ul li {
     padding-left: 35px;
 }
+
+.main-nav ul li a:hover {
+    background: #f0f5ff;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #042259;
+}
+
 nav li {
     font-family: 'Barlow', sans-serif;
     list-style: none;
     text-transform: uppercase;
     display: inline-block;
-    color: #042259;
 }
 
 label {
@@ -82,11 +77,11 @@ label {
 }
 
 .header-title {
-    font-size: 10rem;
+    font-size: 9rem;
     color: #1d81cc;
     font-family: 'Emblema One', cursive;
     margin: 100px 0 -65px 0;
-    /* width: 33.33%; */
+
 }
 
 .header-title h1 {
@@ -98,7 +93,6 @@ h2 {
     font-family: 'Barlow', sans-serif;
     color: #042259;
     font-size: 4rem;
-    /* margin: 0; */
     
 }
 
@@ -122,6 +116,7 @@ h1 span {
     list-style: none;
 }
 
+
 .fab {
     margin-bottom: 15px;
 }
@@ -140,7 +135,6 @@ h1 span {
 .section-1 h2 {
     font-family: 'Emblema One', cursive;
     color: #1d81cc;
-    /* letter-spacing: 1px; */
     padding: 40px 0;
     text-align: center;
     margin: 0;
@@ -178,7 +172,6 @@ h1 span {
 .section-1-right-side h2 {
     font-family: 'Emblema One', cursive;
     color: #1d81cc;
-    /* letter-spacing: 1px; */
     margin: 0;
     padding: 0;
 
@@ -206,16 +199,11 @@ button {
     background: #f0f5ff;
 }
 
-/* .section-2-top {
-    text-align: center;
-} */
-
 .section-2 h2 {
     margin: 0;
     padding: 0;
     font-family: 'Emblema One', cursive;
     color: #1d81cc;
-    /* padding-top: 100px; */
 }
 
 .section-2 p {
@@ -230,17 +218,11 @@ button {
     float: left;
     width: 50%;
     padding: 100px 100px 0;
-    /* display: inline-block;
-    text-align: left; */
-    /* margin: auto; */
-    /* height: 50%; */
-   
 
 }
 .section-2-top-right-side {
     float: right;
     width: 50%;
-    /* clear: both; */
 }
 
 .section-2-bottom {
@@ -256,21 +238,12 @@ button {
     float: right;
     width: 50%;
     padding: 100px 100px 0;
-    /* text-align: center; */
 
 }
 
 .section-2 span {
     display: block;
 }
-
-/* .section-2-button-1, .section-2-button-2 {
-    font-family: 'Emblema One', cursive;
-    font-size: 2rem;
-    line-height: 29px;
-    text-align: center;
-    color:#042259
-} */
 
 .more-butts {
 
@@ -323,8 +296,7 @@ footer {
 
 .footer-stuff {
     float: left;
-    /* width: calc(33.33% - 20px); */
-    /* margin: 0 10px; */
+
 }
 
 .stuff-1 {
@@ -334,7 +306,15 @@ footer {
 
 .stuff-2, .stuff-3 {
     width: 25%;
-    /* padding-left: 25px; */
+}
+
+.stuff-3 {
+    margin-top: 25px;
+}
+
+.footer-nav ul {
+    margin: 0;
+
 }
 
 footer aside {
@@ -359,6 +339,11 @@ footer ul li {
     text-align: right;
 }
 
+
+footer ul li:hover {
+    padding: 0;
+    background: #1f2022;
+}
 footer p {
     font-family: 'Barlow', sans-serif;
     font-size: 1rem;
@@ -366,7 +351,6 @@ footer p {
 
 
 input[type=submit] {
-    /* float: right; */
     background:#f5c8cf;
     font-family: 'Emblema One', cursive;
     font-size: 1.5rem;
@@ -419,21 +403,90 @@ footer p {
 
 @media (max-width: 1350px) {
 
-    /* .header-title { 
-        font-size: 5.8rem; 
-        
-     }
-     .header-title h2 {
-         font-size: 1rem;
-
-     } */
 
      h1 span {
         display: block;
         margin-top: -35px;
+
+     }
+
+     
      
 }
 
+@media (max-width: 1330px) {
+
+    .section-2 {
+        background: #fcdde2;
+    }
+
+    .section-2 img {
+        width: 100%;
+    }
+
+
+    .section-2-top-left-side {
+        float: none;
+        width: 100%;
+        padding: inherit;
+
+    }
+    .section-2-top-right-side {
+        float: none;
+        width: 100%;
+    }
+
+    .section-2-bottom-left-side {
+        float: none;
+        width: 100%;
+
+    }
+
+    .section-2-bottom-right-side {
+        padding: 0;
+        float: none;
+        width: 100%;
+
+    }
+
+    .section-2 h2 {
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .section-2-button-1 {
+        text-align: center;
+        padding: 40px 30px;
+        margin-bottom: 20px;
+    }
+
+    .section-2-button-2 {
+        text-align: center;
+        padding: 20px 30px;
+        margin: 0;
+
+    }
+
+
+    button {
+        padding: 20px;
+    }
+
+    button.more-butts {
+
+        font-family: 'Emblema One', cursive;
+        font-size: 2rem;
+        line-height: 29px;
+        color:white;
+        background: #042259;
+
+    }
+
+
+
+}
+
+    
 
 @media (max-width: 1175px) {
 
@@ -446,7 +499,7 @@ footer p {
     }
 
 
-
+}
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 1050px) {
@@ -459,9 +512,6 @@ footer p {
 		display: block;
 		text-align: right;
         padding-right: 0px;
-        /* margin: 0 35px 0 */
-
-
     }
     
     .main-nav {
@@ -484,7 +534,7 @@ footer p {
 	#toggle:checked + .header-nav {
 		display: block;
 
-}
+    }
 
     .header-title { 
         margin-top: 0; 
@@ -518,84 +568,13 @@ footer p {
         padding: 20px;
     }
 
-    .section-2 {
-        background: #fcdde2;
-    }
-
-    .section-2 img {
-        width: 100%;
-    }
-
-
-    .section-2-top-left-side {
-        float: none;
-        width: 100%;
-        padding: inherit;
-        /* height: 50%; */
-        /* text-align: center; */
-
-    }
-    .section-2-top-right-side {
-        float: none;
-        width: 100%;
-        /* clear: both; */
-    }
-
-    .section-2-bottom-left-side {
-        float: none;
-        width: 100%;
-
-    }
-
-    .section-2-bottom-right-side {
-        padding: 0;
-        float: none;
-        width: 100%;
-
-    }
-
-    .section-2 h2 {
-        text-align: center;
-        padding-top: 40px;
-    }
-
-    .section-2-button-1 {
-        text-align: center;
-        padding: 40px 30px;
-        margin-bottom: 20px;
-    }
-
-    .section-2-button-2 {
-        text-align: center;
-        padding: 20px 30px;
-        margin-bottom: 20px;
-
-    }
-
-
-    button {
-        /* background: #042259;
-        color: white; */
-        padding: 20px;
-    }
-
-    button.more-butts {
-
-        font-family: 'Emblema One', cursive;
-        font-size: 2rem;
-        line-height: 29px;
-        color:white;
-        background: #042259;
-
-    }
-
     .header-title {
         margin-top: 70px;
     }
 
 
 
-
+}
 
 /* Landscape phones and down */
 @media (max-width: 700px) {
@@ -603,12 +582,6 @@ footer p {
     .header-title { 
         font-size: 3rem; 
      }
-
-     header {
-         background-size: 30%;
-     }
-
-     .header
 
     .gallery-item {
         float: left;
@@ -677,7 +650,8 @@ footer p {
  
     header {
         height: 50vh;
-        background-size: 50%;
+        background-size: 60%;
+        padding-top: 1px;
     }
 
     header span {
@@ -685,12 +659,21 @@ footer p {
     }
 
     header h2 {
-        margin-top: 43px;
-        font-size: 3rem;
+        margin-top: 50px;
+        font-size: 2.5rem;
     }
 
+    label {
+        font-size: 50px;
+    }
 
+    .main-nav {
+        margin-right: 20px;
+    }
 
+    .stuff-2, .stuff-3 {
+        margin: 10px 0 40px 0;
+    }
 
+}
 
-   
